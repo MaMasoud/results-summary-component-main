@@ -1,0 +1,171 @@
+/* Light red: hsl(0, 100%, 67%);
+Orangey yellow: hsl(39, 100%, 56%);
+Green teal: hsl(166, 100%, 37%);
+Cobalt blue: hsl(234, 85%, 45%);
+
+Gradients
+Light slate blue (background): hsl(252, 100%, 67%)
+
+Light royal blue (background): hsl(241, 81%, 54%)
+
+Violet blue (circle): hsla(256, 72%, 46%, 1)
+
+Persian blue (circle): hsla(241, 72%, 46%, 0)
+
+Neutral
+White: hsl(0, 0%, 100%)
+Pale blue: hsl(221, 100%, 96%)
+Light lavender: hsl(241, 100%, 89%)
+Dark gray blue: hsl(224, 30%, 27%) */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+*{
+    font-family: 'Hanken Grotesk', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(221, 100%, 96%);
+}
+.box{
+    width: 735px;
+    height: 515px;
+    background-color: hsl(0, 0%, 100%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+}
+.box .left-box{
+    padding: 45px 40px;
+    background-image: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box .left-box h3{
+    color: hsl(241, 100%, 89%);
+    font-size: 25px;
+    font-weight: 700;
+}
+.box .left-box .circle{
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(0deg, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box .left-box .circle .num{
+    font-size: 80px;
+    font-weight: 800;
+    color: white;
+}
+.box .left-box .circle .num-small{
+    font-size: large;
+    color: hsl(246.04deg 100% 72.75%);
+    margin-top: -10px;
+}
+.box .left-box h2{
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+}
+.box .left-box p{
+    color: hsl(241, 100%, 89%);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 20px;
+}
+.box .right-box{
+    padding: 45px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box .right-box h3{
+    font-weight: 800;
+    font-size: x-large;
+    color: hsl(224, 30%, 27%);
+}
+.box .right-box .cards .card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 60px;
+    border-radius: 10px;
+}
+.box .right-box .cards .card:not(:last-child){
+    margin-bottom:15px ;
+}
+.box .right-box .cards .card:first-child{
+    background-color: hsl(0deg 100% 67% / 10%);;
+}
+.box .right-box .cards .card:first-child .card-name h4{
+    color: hsl(0deg 100% 67% / 80%);
+}
+.box .right-box .cards .card:nth-child(2){
+    background-color: hsl(39deg 100% 56% / 10%);
+    
+}
+.box .right-box .cards .card:nth-child(2) .card-name h4{
+    color: hsl(39deg 100% 56% / 80%);
+}
+.box .right-box .cards .card:nth-child(3){
+    background-color: hsl(166deg 100% 37% / 10%);
+    
+}
+.box .right-box .cards .card:nth-child(3) .card-name h4{
+    color: hsl(166, 100%, 37%);
+}
+.box .right-box .cards .card:last-child{
+    background-color: hsl(234deg 85% 45% / 10%);
+    
+}
+.box .right-box .cards .card:last-child .card-name h4{
+    color: hsl(234, 85%, 45%);
+}
+.box .right-box .cards .card .card-name{
+    display: flex;
+    justify-content: center;
+}
+.box .right-box .cards .card .card-name h4{
+    margin-left: 10px;
+    font-size: 18px;
+}
+.box .right-box .cards .card .card-present h5{
+color: hsl(225deg 1.8% 56.47%);
+font-weight: 800;
+font-size: 18px;
+}
+.box .right-box .cards .card .card-present h5 span{
+    color: hsl(224, 30%, 27%);
+}
+.box .right-box a{
+    text-decoration: none;
+    background-color: hsl(224, 30%, 27%);
+    background-image: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    color: white;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.box .right-box a:hover{
+    background-image: linear-gradient(0deg, hsla(241, 81%, 54%, 0), hsla(252, 100%, 67%, 0));
+    
+}
