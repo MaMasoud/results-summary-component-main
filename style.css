@@ -40,6 +40,17 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     border-radius: 20px;
+    box-shadow: 10px 10px 20px 0px rgb(200 199 255 / 50%);;
+}
+@media (max-width:600px) {
+    .box{
+        width: 100%;
+        min-height: 800px;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: none ;
+        grid-template-rows: 3fr 4fr;
+    }
 }
 .box .left-box{
     padding: 45px 40px;
@@ -87,6 +98,32 @@ body{
     font-size: 18px;
     font-weight: 500;
     padding: 0 20px;
+}
+@media (max-width:600px){
+    .box .left-box{
+        border-radius: 0 0 30px 40px;
+        padding: 20px 25px 35px;
+    }
+    .box .left-box h3{
+        font-size: 18px;
+    }
+    .box .left-box .circle{
+        width: 150px;
+        height: 150px;
+    }
+    .box .left-box .circle .num{
+        font-size: 60px;
+    }
+    .box .left-box .circle .num-small{
+        margin-top: 0;
+    }
+    .box .left-box h2{
+        font-size: 25px;
+    }
+    .box .left-box p{
+        padding: 0;
+        /* margin-top: -10px; */
+    }
 }
 .box .right-box{
     padding: 45px 40px;
@@ -159,6 +196,7 @@ font-size: 18px;
     background-image: linear-gradient(0deg, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
     color: white;
     height: 60px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -168,4 +206,12 @@ font-size: 18px;
 .box .right-box a:hover{
     background-image: linear-gradient(0deg, hsla(241, 81%, 54%, 0), hsla(252, 100%, 67%, 0));
     
+}
+@media (max-width:600px){
+    .box .right-box{
+        padding: 25px;
+    }
+    .box .right-box h3{
+        font-size: 18px;
+    }
 }
